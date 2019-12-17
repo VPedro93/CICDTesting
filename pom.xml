@@ -33,7 +33,7 @@
                   <muleVersion>${app.runtime}</muleVersion>
                   <username>vascodummy</username>
                   <password>Vascop93</password>
-                  <applicationName>testmaven</applicationName>
+                  <applicationName>cicdtest</applicationName>
                   <environment>Sandbox</environment>
                   <workerType>Micro</workerType>
                   <workers>1</workers>
