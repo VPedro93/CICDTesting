@@ -9,7 +9,8 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	</http:listener-config>
 	<flow name="cicdtestFlow" doc:id="1ac8486c-b057-46b2-bbfd-62f6c88bbd2a" >
 		<http:listener doc:name="Listener" doc:id="cb1758f8-c3ef-4679-9185-11d5c5d3f873" config-ref="HTTP_Listener_config" path="/cicd"/>
+		<set-payload value="cicdpayload1" doc:name="Set Payload" doc:id="bec9b7da-3316-4398-909a-14dfdebd1296" />
 		<logger level="INFO" doc:name="Logger" doc:id="4507ba5f-5cd2-44c6-a5a7-546ade04a282" message="Testing Message"/>
-		<set-payload value="cicdpayload1" doc:name="Set Payload" doc:id="66187b7c-d730-439d-b677-d024ecf8669f" />
+		<set-payload value="cicdpayload2" doc:name="Set Payload" doc:id="66187b7c-d730-439d-b677-d024ecf8669f" />
 	</flow>
 </mule>
